@@ -5,6 +5,7 @@ void LidarCallback(const sensor_msgs::LaserScan msg)
 
     float fMidDist = msg.ranges[180];//获取前方180度的测距值
     ROS_INFO("前方测距 ranges[180]: %f 米", fMidDist);//打印前方测距值
+}
 int main(int argc, char** argv)
 {
     setlocale(LC_ALL, "");//设置中文显示
