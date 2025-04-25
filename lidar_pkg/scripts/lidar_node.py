@@ -5,7 +5,7 @@ from sensor_msgs.msg import LaserScan
 def LidarCallback(msg):
     
     dist = msg.ranges[180]
-    rospy.loginfo("前方测距 ranges[180]:=  %f 米", dist)
+    rospy.loginfo("前方测距 ranges[180]:=  %f 米！", dist)
 
 
 if __name__ == '__main__':
