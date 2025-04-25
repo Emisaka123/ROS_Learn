@@ -18,7 +18,7 @@ def LidarCallback(msg):
 
     if dist < 1.5:
         vel_cmd.linear.x = 0.0
-        vel_cmd.angular.z = 0.5
+        vel_cmd.angular.z = 0.3
         count = 50
         rospy.loginfo("前方障碍物过近，停止前进！")
     else:
