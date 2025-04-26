@@ -1,6 +1,6 @@
 #include<ros/ros.h>
 #include<sensor_msgs/LaserScan.h>
-#include<geometry_msgs/Twist.h>
+#include<geometry_msgs/Twist.h>//引入几何消息库
 ros::Publisher vel_pub;//定义速度指令发布器
 int nCount = 0;//定义计数器
 void LidarCallback(const sensor_msgs::LaserScan msg)
