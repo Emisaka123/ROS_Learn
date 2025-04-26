@@ -1,9 +1,11 @@
 #include<ros/ros.h>
 #include<std_msgs/String.h>
+#include<qq_msgs/Carry.h>//自定义消息
 
-
-void chao_callback( std_msgs::String msg)
+void chao_callback( qq_msgs::Carry msg)
 {
+  ROS_WARN(msg.grade.c_str());
+  ROS_WARN("star: %d星", msg.star);
   ROS_INFO(msg.data.c_str());
 }
 
