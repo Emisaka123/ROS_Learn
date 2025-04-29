@@ -11,7 +11,7 @@ int main(int argc, char **argv){
       nav_msgs::OccupancyGrid msg;
       msg.header.frame_id = "map";
       msg.header.stamp = ros::Time::now();
-      msg.info.origin.position.x = 0.0;
+      msg.info.origin.position.x = 0 .0;
       msg.info.origin.position.y = 0.0;
       msg.info.resolution = 1.0;
       msg.info.width = 4;
